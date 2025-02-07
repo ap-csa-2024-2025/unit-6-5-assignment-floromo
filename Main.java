@@ -4,13 +4,24 @@ public class Main
 {
   public static void main(String[] args)
   {
-    // Create some arrays here to test your methods
-    
+    Scanner sc = new Scanner(System.in);
+
+    // Problem 1
+    System.out.println("Enter array length: ");
+    int len = sc.nextInt();
+    sc.nextLine();
+
+    System.out.println("Enter values: ");
+    String arr1 = new String[len];
+    for (int i = 0; i < len; i++){
+      arr1[i] = sc.nextLine();
+    }
+    reverse(arr1);
   }
 
   public static void reverse(String[] arr)
   {
-
+    System.out.println(" ");
   }
 
   public int product(int[] arr)
